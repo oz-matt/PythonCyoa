@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import npyscreen
-from GForms import StdForm
+from GForms import StdForm, T1D1str, split_str_into_list
 
 glob = 2
 
@@ -103,7 +103,7 @@ class TestApp(npyscreen.NPSAppManaged):
         self.registerForm('MAIN', mForm())
         self.registerForm('CONFIRMFM', NForm())
         self.registerForm('OFRM', OForm())
-        self.registerForm('TFRM2', StdForm(['wrtbertbet','rbtete','yujr6u6776337'],['ch1','ch2']))
+        self.registerForm('TFRM2', StdForm(split_str_into_list(T1D1str),['ch1','ch2']))
         self.registerForm('PFRM', PForm())
 
 if __name__ == "__main__":
